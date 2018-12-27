@@ -1,11 +1,11 @@
 Active: 1
 
 PlatformSets:
- - ondemand-otrs6
+ - ondemand-ligero6
 
-DeployOTRSBranch: rel-6_0
+DeployLIGEROBranch: rel-6_0
 
-DeployOTRSPackages:
- - OTRSCodePolicy@master
+DeployLIGEROPackages:
+ - LIGEROCodePolicy@master
  - GeneralCatalog@rel-6_0
  - ITSMCore@rel-6_0

@@ -1,7 +1,7 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
-# $origin: otrs - 114796cddcef9760b445844a00011c0326b715c4 - scripts/test/Selenium/Agent/AgentTicketPhone.t
+# $origin: ligero - 114796cddcef9760b445844a00011c0326b715c4 - scripts/test/Selenium/Agent/AgentTicketPhone.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -31,10 +31,10 @@ $Selenium->RunTest(
             1,
             1,
             'var',
-            'http://www.otrs.com',
+            'http://www.ligero.com',
             0,
             '',
-            'AsPopup OTRSPopup_TicketAction',
+            'AsPopup LIGEROPopup_TicketAction',
         ];
         $Helper->ConfigSettingChange(
             Key   => 'CustomerUser',
@@ -291,7 +291,7 @@ $Selenium->RunTest(
             '[% Env("CGIHandle") %]?Action=AgentTicketCompose;ResponseID=1;TicketID=[% Data.TicketID | uri %];ArticleID=[% Data.ArticleID | uri %]',
             0,
             '',
-            'AsPopup OTRSPopup_TicketAction',
+            'AsPopup LIGEROPopup_TicketAction',
         ];
         $Helper->ConfigSettingChange(
             Key   => 'CustomerUser',
@@ -442,7 +442,7 @@ $Selenium->RunTest(
         );
 
         # Select SubQueue on loading screen.
-        # Bug#12819 ( https://bugs.otrs.org/show_bug.cgi?id=12819 ) - queue contains spaces in the name.
+        # Bug#12819 ( https://bugs.ligero.org/show_bug.cgi?id=12819 ) - queue contains spaces in the name.
         # Navigate to AgentTicketPhone screen again to check selecting a queue after loading screen.
         $QueueValue = $QueueID2 . "||Junk::SubQueue $RandomID  $RandomID";
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentTicketPhone");
@@ -465,7 +465,7 @@ $Selenium->RunTest(
 # ITSMIncidentProblemManagement
 # ---
         # Verify Service Incident State is not available when config 'Ticket::Frontend::AgentTicketPhone###ShowIncidentState'
-        #   is disabled. See bug#14150 (https://bugs.otrs.org/show_bug.cgi?id=14150)
+        #   is disabled. See bug#14150 (https://bugs.ligero.org/show_bug.cgi?id=14150)
         $Helper->ConfigSettingChange(
             Key   => 'Ticket::Frontend::AgentTicketPhone###ShowIncidentState',
             Value => 0,

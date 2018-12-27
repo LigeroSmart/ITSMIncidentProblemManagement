@@ -1,7 +1,7 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
-# $origin: otrs - 8ce19805570da1d4442f32f839a33057131e6335 - Kernel/Modules/CustomerTicketProcess.pm
+# $origin: ligero - 8ce19805570da1d4442f32f839a33057131e6335 - Kernel/Modules/CustomerTicketProcess.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -9,7 +9,7 @@
 # --
 
 package Kernel::Modules::CustomerTicketProcess;
-## nofilter(TidyAll::Plugin::OTRS::Perl::DBObject)
+## nofilter(TidyAll::Plugin::LIGERO::Perl::DBObject)
 
 use strict;
 use warnings;

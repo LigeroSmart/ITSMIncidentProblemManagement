@@ -1,7 +1,7 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
-# $origin: otrs - 8ce19805570da1d4442f32f839a33057131e6335 - Kernel/Modules/AgentTicketProcess.pm
+# $origin: ligero - 8ce19805570da1d4442f32f839a33057131e6335 - Kernel/Modules/AgentTicketProcess.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -3037,7 +3037,7 @@ sub _RenderCustomer {
     }
 
     # When there is no Customer in the DB, it could be unknown Customer, set it from the ticket.
-    # See bug#12797 ( https://bugs.otrs.org/show_bug.cgi?id=12797 ).
+    # See bug#12797 ( https://bugs.ligero.org/show_bug.cgi?id=12797 ).
     else {
         $Data{CustomerUserID} = $Param{Ticket}{CustomerUserID} || '';
         $Data{CustomerID}     = $Param{Ticket}{CustomerID}     || '';
@@ -4857,8 +4857,8 @@ sub _StoreActivityDialog {
                 # get the current server Time-stamp
                 my $DateTimeObject   = $Kernel::OM->Create('Kernel::System::DateTime');
                 my $CurrentTimeStamp = $DateTimeObject->ToString();
-                my $OTRSTimeZone     = $DateTimeObject->OTRSTimeZoneGet();
-                $TicketParam{Title} = "$Param{ProcessName} - $CurrentTimeStamp ($OTRSTimeZone)";
+                my $LIGEROTimeZone     = $DateTimeObject->LIGEROTimeZoneGet();
+                $TicketParam{Title} = "$Param{ProcessName} - $CurrentTimeStamp ($LIGEROTimeZone)";
 
                 # use article subject from the web request if any
                 if ( IsStringWithData( $Param{GetParam}->{Subject} ) ) {

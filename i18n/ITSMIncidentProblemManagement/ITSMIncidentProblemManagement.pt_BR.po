@@ -4,15 +4,15 @@
 # Flávio Veras <flaviove@gmail.com>, 2017
 # Gilberto José Souza Coutinho <gilberto.jsc@gmail.com>, 2017
 # Glauber Caires <glaubercaires@gmail.com>, 2016
-# Ricardo von Staa <ricardo.von.staa@otrs.com>, 2018
+# Ricardo von Staa <ricardo.von.staa@ligero.com>, 2018
 # Samuel Diniz Casimiro <nedmaj@yahoo.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-04-24 14:31+0000\n"
 "PO-Revision-Date: 2018-05-08 21:01+0000\n"
-"Last-Translator: Ricardo von Staa <ricardo.von.staa@otrs.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/otrs/OTRS/language/pt_BR/)\n"
+"Last-Translator: Ricardo von Staa <ricardo.von.staa@ligero.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/ligero/LIGERO/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

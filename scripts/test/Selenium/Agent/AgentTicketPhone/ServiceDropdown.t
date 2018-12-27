@@ -1,7 +1,7 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
-# $origin: otrs - 87629f00b8a02498bf28c802419865b3286ead2e - scripts/test/Selenium/Agent/AgentTicketPhone/ServiceDropdown.t
+# $origin: ligero - 87629f00b8a02498bf28c802419865b3286ead2e - scripts/test/Selenium/Agent/AgentTicketPhone/ServiceDropdown.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -30,7 +30,7 @@ my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 # this test is to check that when AgentTicketPhone is loaded already with
 # customer data on it (like when doing Split), the dropdown of Service is
 # prefilled with the correct data. This is because of bug
-# http://bugs.otrs.org/show_bug.cgi?id=7060
+# http://bugs.ligero.org/show_bug.cgi?id=7060
 
 $Selenium->RunTest(
     sub {
